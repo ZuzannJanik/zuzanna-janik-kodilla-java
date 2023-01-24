@@ -17,7 +17,7 @@ public class ShapeCollector {
     }
     public boolean removeFigure(Shape shape) {
         shapes.remove(shape);
-        return false;
+        return true;
     }
     public Shape getFigure(int n) {
         if (n < shapes.size()&& n>=0) ;

@@ -175,7 +175,7 @@ public class ShapeCollectorTestSuite {
             boolean result = shapeCollector.removeFigure(shape);
 
             //Then
-            Assertions.assertFalse(result);
+            Assertions.assertTrue(result);
             Assertions.assertEquals(0, shapeCollector.getShapes().size());
         }
         @DisplayName("Test 3: Checking if shape retrieved from ShapeCollector class is the same as shape that was inserted into the class.")
