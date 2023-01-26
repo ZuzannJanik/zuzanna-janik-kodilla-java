@@ -4,7 +4,7 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.testng.annotations.Test;
+
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,7 +17,7 @@ public class ForumStatisticsTestSuite {
     private ForumStatistics forumStatistics;
     @BeforeEach
     public void beforeTest() {
-        //ForumStatistics forumStatistics = new ForumStatistics();
+        forumStatistics = new ForumStatistics();
         statisticsMock = mock(Statistics.class);
         List<String> userName = new ArrayList<>();
         for(int n=0; n<5; n++) {
@@ -83,15 +83,12 @@ public class ForumStatisticsTestSuite {
         forumStatistics.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(false,forumStatistics.morePostsThenComments());
+        assertTrue(forumStatistics.morePostsThenComments());
     }
     @Test
     void testQuantityOfUsers0() {
         //Given
         List<String> userName = new ArrayList<>();
-        for(int n=0; n<5; n++) {
-            userName.add("Name");
-        }
         when(statisticsMock.usersNames()).thenReturn(userName);
 
         //When
@@ -113,7 +110,7 @@ public class ForumStatisticsTestSuite {
         forumStatistics.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(1000, forumStatistics.getUserQuantity());
+        assertEquals(100, forumStatistics.getUserQuantity());
     }
 }
 

@@ -49,7 +49,7 @@ public class ForumStatistics {
         }
     }
     public double calculateAverageCommentOnPost() {
-        if (userQuantity > 0) {
+        if (postQuantity > 0) {
             return commentQuantity / postQuantity;
         } else {
             return 0;
