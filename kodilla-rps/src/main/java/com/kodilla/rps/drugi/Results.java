@@ -5,8 +5,22 @@ public class Results {
     int myScore = 0;
     int computerScore = 0;
 
-    //Nie wiem jak pobrać tu wynik np. z paper
-    public void results() {
+    public int getMyScore() {
+        return myScore;
+    }
+
+    public int getComputerScore() {
+        return computerScore;
+    }
+
+    public void results(int roundResult) {
+        if (roundResult == 1) {
+            myScore++;
+        } else if (roundResult == 2) {
+            computerScore++;
+        }
+    }
+    public void allResults() {
         System.out.println("Your score is " + myScore + " points");
         System.out.println("Computer score is " + computerScore + " points");
 

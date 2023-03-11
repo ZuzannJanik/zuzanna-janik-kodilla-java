@@ -8,6 +8,8 @@ public class RpsRunner {
     public static void main(String[] args) {
         boolean end = false;
         int counter = 0;
+        Menu menu = new Menu();
+        Results results = new Results();
 
 
         NameScanner nameScanner = new NameScanner();
@@ -23,19 +25,17 @@ public class RpsRunner {
         System.out.println("----------------------");
 
         while (!end) {
-            Menu menu = new Menu();
-            menu.menu();
+            menu.menu(results);
             counter++;
 
-            if (counter == 3) { //Nie wiem jak odnieść się do wartości rounds z RoundsSetter
+            if (results.getComputerScore() == roundsSetter.getRoundNumber() || results.getMyScore() == roundsSetter.getRoundNumber()) {
                 end = true;
             }
         }
-//Wyniki się nie znliczają
-            Results results = new Results();
-            results.results();
+        results.allResults();
             System.out.println("----------------------");
         }
+
     }
 
 

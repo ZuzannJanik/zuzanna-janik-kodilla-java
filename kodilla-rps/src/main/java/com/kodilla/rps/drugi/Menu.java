@@ -1,9 +1,11 @@
 package com.kodilla.rps.drugi;
 
+
 import java.util.Scanner;
 
 public class Menu {
-    public void menu() {
+    public void menu(Results results) {
+
         Scanner scanner = new Scanner(System.in);
         RoundsSetter roundsSetter = new RoundsSetter();
 
@@ -17,13 +19,16 @@ public class Menu {
 
         if (choice == '1') {
             Rock rock = new Rock();
-            rock.game();
+            int result = rock.game();
+            results.results(result);
         } else if (choice == '2') {
             Paper paper = new Paper();
-            paper.game();
+            int result = paper.game();
+            results.results(result);
         } else if (choice == '3') {
             Scissor scissor = new Scissor();
-            scissor.game();
+            int result = scissor.game();
+            results.results(result);
         } else if (choice == 'x') {
             System.out.println("Are you sure you want to quit the game? Choose y/n");
             char quit = scanner.next().charAt(0);
@@ -39,7 +44,7 @@ public class Menu {
                 System.out.println("Choose your move");
             } else {
                 roundsSetter.roundsSetter();
-                menu();
+                menu(results);
                 System.out.println("OK");
             }
         }
