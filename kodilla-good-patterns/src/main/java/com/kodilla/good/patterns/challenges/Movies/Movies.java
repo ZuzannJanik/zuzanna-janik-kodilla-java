@@ -1,6 +1,7 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.challenges.Movies;
 
-import static com.kodilla.good.patterns.challenges.MovieStore.getMovies;
+
+import static com.kodilla.good.patterns.challenges.Movies.MovieStore.getMovies;
 import static java.util.stream.Collectors.joining;
 
 public class Movies {

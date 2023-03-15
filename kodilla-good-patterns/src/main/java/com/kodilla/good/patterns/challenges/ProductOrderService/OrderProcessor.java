@@ -4,7 +4,7 @@ public class OrderProcessor {
     private OrderInformationService orderInformationService;
     private OrderServiceProcessor orderServiceProcessor;
     private OrderRepositoryProcessor orderRepositoryProcessor;
-    private Order order;
+    Order order;
 
     public OrderProcessor(OrderInformationService orderInformationService, OrderServiceProcessor orderServiceProcessor, OrderRepositoryProcessor orderRepositoryProcessor) {
         this.orderInformationService = orderInformationService;
@@ -12,7 +12,7 @@ public class OrderProcessor {
         this.orderRepositoryProcessor = orderRepositoryProcessor;
     }
     public OrderDto process(final String user, final String item, final int itemQty, final String orderAdress) {
-
+        Order order = new Order(user, item, itemQty, orderAdress);
         boolean isOrderConfirmed = orderServiceProcessor.createOrder(order);
 
                 if (isOrderConfirmed) {
