@@ -1,9 +1,6 @@
 package com.kodilla.good.patterns.challenges.KodillaAirplaneCompany;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class KodillaFlights {
     public static void main(String[] args) {
@@ -37,9 +34,6 @@ public class KodillaFlights {
         for (Map.Entry<Flight, Flight> entry : entries) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
-
-
-
     }
 }
 
