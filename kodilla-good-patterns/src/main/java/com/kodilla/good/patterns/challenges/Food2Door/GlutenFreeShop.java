@@ -15,13 +15,10 @@ public class GlutenFreeShop implements Company {
         if (warehouseGlutenFreeShop.containsKey(productName) && warehouseGlutenFreeShop.get(productName) >= productQty) {
             Integer actualQty = warehouseGlutenFreeShop.get(productName) - productQty;
             warehouseGlutenFreeShop.put(productName, actualQty);
-            System.out.println("GlutenFreeShop! Everything here is gluten free!");
-            System.out.println("Your order is " + productQty + " of " + productName);
-            System.out.println("We still have " + actualQty + " of that product!");
-            System.out.println("GlutenFreeShop - Order processed");
+            System.out.println("GlutenFreeShop! Everything here is gluten free! Your order is " + productQty + " of " + productName);
+            System.out.println("We still have " + actualQty + " of that product! GlutenFreeShop - Order processed");
             return true;
         } else {
-            System.out.println("Sorry, we don't have that many items in stock");
             System.out.println("Available immediately " + warehouseGlutenFreeShop.get(productName));
             return false;
         }

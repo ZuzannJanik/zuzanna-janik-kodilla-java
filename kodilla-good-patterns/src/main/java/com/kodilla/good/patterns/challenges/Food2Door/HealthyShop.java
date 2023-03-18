@@ -15,13 +15,10 @@ public class HealthyShop implements Company {
         if (warehouseHealthyShop.containsKey(productName) && warehouseHealthyShop.get(productName) >= productQty) {
             Integer actualQty = warehouseHealthyShop.get(productName) - productQty;
             warehouseHealthyShop.put(productName, actualQty);
-            System.out.println("HealthyShop! Everything here is healthy!");
-            System.out.println("Your order is " + productQty + " of " + productName);
-            System.out.println("We still have " + actualQty + " of that product!");
-            System.out.println("HealthyShop - Order processed");
+            System.out.println("HealthyShop! Everything here is healthy! Your order is " + productQty + " of " + productName);
+            System.out.println("We still have " + actualQty + " of that product! HealthyShop - Order processed");
             return true;
         } else {
-            System.out.println("Sorry, we don't have that many items in stock");
             System.out.println("Available immediately " + warehouseHealthyShop.get(productName));
             return false;
         }

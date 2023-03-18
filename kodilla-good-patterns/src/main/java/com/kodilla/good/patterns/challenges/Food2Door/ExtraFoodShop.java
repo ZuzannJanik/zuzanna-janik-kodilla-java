@@ -16,13 +16,10 @@ public class ExtraFoodShop implements Company {
         if (warehouseExtraFoodShop.containsKey(productName) && warehouseExtraFoodShop.get(productName) >= productQty) {
             Integer actualQty = warehouseExtraFoodShop.get(productName) - productQty;
             warehouseExtraFoodShop.put(productName, actualQty);
-            System.out.println("ExtraFoodShop! Everything here is extra!");
-            System.out.println("Your order is " + productQty + " of " + productName);
-            System.out.println("We still have " + actualQty + " of that product!");
-            System.out.println("ExtraFoodShop - Order processed");
+            System.out.println("ExtraFoodShop! Everything here is extra! Your order is " + productQty + " of " + productName);
+            System.out.println("We still have " + actualQty + " of that product! ExtraFoodShop - Order processed");
             return true;
         } else {
-            System.out.println("Sorry, we don't have that many items in stock");
             System.out.println("Available immediately " + warehouseExtraFoodShop.get(productName));
             return false;
         }
