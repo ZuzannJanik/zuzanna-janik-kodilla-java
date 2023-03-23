@@ -3,7 +3,8 @@ package com.kodilla.good.patterns.challenges.Food2Door;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExtraFoodShop implements Company {
+public class ExtraFoodShop extends Company {
+    private String companyName = "ExtraFoodShop";
     Map<String, Integer> warehouseExtraFoodShop = new HashMap<>();
 
     public void delivery () {
@@ -12,16 +13,14 @@ public class ExtraFoodShop implements Company {
         warehouseExtraFoodShop.put("ExtraMilk", 1000);
     }
 
-    public boolean process(String productName, Integer productQty) {
+    public void process(String productName, Integer productQty) {
+        super.process(productName, productQty);
         if (warehouseExtraFoodShop.containsKey(productName) && warehouseExtraFoodShop.get(productName) >= productQty) {
             Integer actualQty = warehouseExtraFoodShop.get(productName) - productQty;
             warehouseExtraFoodShop.put(productName, actualQty);
-            System.out.println("ExtraFoodShop! Everything here is extra! Your order is " + productQty + " of " + productName);
             System.out.println("We still have " + actualQty + " of that product! ExtraFoodShop - Order processed");
-            return true;
         } else {
-            System.out.println("Available immediately " + warehouseExtraFoodShop.get(productName));
-            return false;
+            System.out.println("Available immediately: " + warehouseExtraFoodShop.get(productName));
         }
     }
 }
