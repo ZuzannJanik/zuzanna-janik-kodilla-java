@@ -1,9 +1,6 @@
 package com.kodilla.good.patterns.challenges.Food2Door;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import static com.kodilla.good.patterns.challenges.Food2Door.InformationCenter.deliveryEmail;
+import java.util.*;
 
 public class HealthyShop extends Company {
     private String companyName = "HealthyShop";
@@ -16,7 +13,7 @@ public class HealthyShop extends Company {
         warehouseHealthyShop.put("TastelessCake", 20);
         warehouseHealthyShop.put("TastelessIce-cream", 30);
         warehouseHealthyShop.put("TastelessCandy", 40);
-        deliveryEmail();
+        super.delivery();
     }
     public void process(String productName, Integer productQty) {
         super.process(productName, productQty);

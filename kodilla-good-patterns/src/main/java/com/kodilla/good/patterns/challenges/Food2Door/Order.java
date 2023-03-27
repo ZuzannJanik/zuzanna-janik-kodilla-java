@@ -6,12 +6,15 @@ public class Order {
         GlutenFreeShop glutenFreeShop = new GlutenFreeShop();
         HealthyShop healthyShop = new HealthyShop();
 
-        extraFoodShop.delivery();
-        glutenFreeShop.delivery();
-        healthyShop.delivery();
+        System.out.println("Welcome to the Food2Door store!");
 
+        extraFoodShop.delivery();
         extraFoodShop.process("ExtraBananas", 2);
+
+        glutenFreeShop.delivery();
         glutenFreeShop.process("FakePizza", 1);
+
+        healthyShop.delivery();
         healthyShop.process("TastelessCake", 200000);
     }
 }
