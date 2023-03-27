@@ -1,6 +1,7 @@
 package com.kodilla.good.patterns.challenges.Allegro;
 
 public abstract class Company {
+    Delivery delivery = new Delivery();
     private String companyName;
     private String companyMail;
     private String companyAdress;
@@ -27,5 +28,11 @@ public abstract class Company {
 
     public void setCompanyAdress(String companyAdress) {
         this.companyAdress = companyAdress;
+    }
+
+    public boolean process (String productName, Integer productQty) {
+            System.out.println("Welcome to the Food2Door store!");
+            System.out.println("Your order is " + productQty + " of " +  " from " + getCompanyName());
+        return true;
     }
 }

@@ -11,10 +11,7 @@ public class Order {
         healthyShop.delivery();
 
         extraFoodShop.process("ExtraBananas", 2);
-        System.out.println();
         glutenFreeShop.process("FakePizza", 1);
-        System.out.println();
         healthyShop.process("TastelessCake", 200000);
-
     }
 }

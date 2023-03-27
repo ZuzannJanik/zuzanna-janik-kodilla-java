@@ -1,15 +1,13 @@
 package com.kodilla.good.patterns.challenges.Allegro;
 
-import com.kodilla.good.patterns.challenges.Food2Door.HealthyShop;
-
 public class AllegroApp {
     public static void main(String[] args) {
         InformationService informationService = new InformationService();
         Delivery delivery = new Delivery();
-        Warehouse warehouse = new Warehouse();
 
-        OrderProccesor orderProccesor = new OrderProccesor(informationService, delivery, warehouse);
+        delivery.delivery();
 
-
+        OrderProccesor orderProccesor = new OrderProccesor(informationService, delivery);
+        orderProccesor.process("ExtraFoodShop",  "extrafoodshop@email.com", "NewYork", 1,"ExtraBananas", 2000);
     }
 }
