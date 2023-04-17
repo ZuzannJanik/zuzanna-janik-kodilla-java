@@ -1,5 +1,5 @@
 package com.kodilla.testing.weather.stub;
-import org.testng.IResultMap;
+
 
 import java.util.*;
 public class WeatherForecast {
