@@ -1,4 +1,6 @@
-package com.kodilla.sudoku;
+package com.kodilla.sudoku.ObjectVersion;
+
+import com.kodilla.sudoku.ObjectVersion.SudokuElement;
 
 import java.util.ArrayList;
 

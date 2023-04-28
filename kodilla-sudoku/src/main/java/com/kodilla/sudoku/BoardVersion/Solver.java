@@ -1,41 +1,6 @@
-package com.kodilla.jdbc.sudoku;
+package com.kodilla.sudoku.BoardVersion;
 
-public class SudokuSolver {
-    public static void main(String[] args) {
-        int[][] board = {
-                {7, 0, 2, 0, 5, 0, 6, 0, 0},
-                {0, 0, 0, 0, 0, 3, 0, 0, 0},
-                {1, 0, 0, 0, 0, 9, 5, 0, 0},
-                {8, 0, 0, 0, 0, 0, 0, 9, 0},
-                {0, 4, 3, 0, 0, 0, 7, 5, 0},
-                {0, 9, 0, 0, 0, 0, 0, 0, 8},
-                {0, 0, 9, 7, 0, 0, 0, 0, 5},
-                {0, 0, 0, 2, 0, 0, 0, 0, 0},
-                {0, 0, 7, 0, 4, 0, 2, 0, 3}
-        };
-        printBoard(board);
-        if (solveBoard(board)) {
-            System.out.println("Solve successfully!");
-        } else {
-            System.out.println("Unsolvable board ;(");
-        }
-        printBoard(board);
-    }
-
-    private static void printBoard(int[][] board) {
-        for (int row = 0; row < 9; row++) {
-            if (row % 3 == 0 && row != 0) {
-                System.out.println("-----------");
-            }
-            for (int column = 0; column < 9; column++) {
-                if (column % 3 == 0 && column != 0) {
-                    System.out.print("|");
-                }
-                System.out.print(board[row][column]);
-            }
-            System.out.println();
-        }
-    }
+public class Solver {
 
     private static boolean isNumberInRow(int[][] board, int number, int row) {
         for (int i = 0; i < 9; i++) {
@@ -69,13 +34,13 @@ public class SudokuSolver {
         return false;
     }
 
-    private static boolean isValidPlacement(int[][] board, int number, int row, int column) {
+    static boolean isValidPlacement(int[][] board, int number, int row, int column) {
         return !isNumberInRow(board, number, row) &&
                 !isNumberInColumn(board, number, column) &&
                 !isNumberInBox(board, number, row, column);
     }
 
-    private static boolean solveBoard(int[][] board) {
+    static boolean solveBoard(int[][] board) {
         for (int row = 0; row < 9; row++) {
             for (int column = 0; column < 9; column++) {
                 if (board[row][column] == 0) {

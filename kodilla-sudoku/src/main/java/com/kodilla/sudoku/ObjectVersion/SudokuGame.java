@@ -1,7 +1,8 @@
-package com.kodilla.sudoku;
+package com.kodilla.sudoku.ObjectVersion;
 
 public class SudokuGame {
     public static void main(String[] args) {
+
         SudokuBoard sudokuBoard = new SudokuBoard();
         SudokuRow sudokuRow = new SudokuRow();
 

@@ -1,4 +1,4 @@
-package com.kodilla.sudoku;
+package com.kodilla.sudoku.ObjectVersion;
 
 public class SudokuElement {
     private int value = -1;
