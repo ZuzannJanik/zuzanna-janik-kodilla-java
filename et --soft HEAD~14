@@ -1,0 +1,137 @@
+[33mcommit 74dc4f88322eb4687ea9fa002c2308256d5eb532[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ZuzannJanik <zjanik89@gmail.com>
+Date:   Tue Jun 6 14:09:59 2023 +0800
+
+    fix
+
+.gitignore
+kodilla-sudoku/build.gradle
+kodilla-sudoku/gradle/wrapper/gradle-wrapper.jar
+kodilla-sudoku/gradle/wrapper/gradle-wrapper.properties
+kodilla-sudoku/src/main/resources/application.properties
+kodilla-sudoku/src/test/java/com/kodilla/sudoku/KodillaSudokuApplicationTests.java
+kodilla-sudoku2/.gitignore
+kodilla-sudoku2/build.gradle
+kodilla-sudoku2/src/main/java/com/kodilla/sudoku/BoardVersion/Application.java
+kodilla-sudoku2/src/main/java/com/kodilla/sudoku/BoardVersion/Board.java
+kodilla-sudoku2/src/main/java/com/kodilla/sudoku/BoardVersion/Menu.java
+kodilla-sudoku2/src/main/java/com/kodilla/sudoku/BoardVersion/Solver.java
+settings.gradle
+
+[33mcommit d5e53ef9443364eb43b241cf97efdcf41428fc8d[m
+Author: ZuzannJanik <zjanik89@gmail.com>
+Date:   Tue Jun 6 13:47:26 2023 +0800
+
+    24.2
+
+kodilla-hibernate/build.gradle
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/KodillaHibernateApplication.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/Company.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/Employee.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/dao/CompanyDao.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/dao/EmployeeDao.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/facade/SearchFacade.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/facade/SearchProcessingException.java
+kodilla-hibernate/src/main/resources/application.properties
+kodilla-hibernate/src/test/java/com/kodilla/hibernate/manytomany/dao/CompanyDaoTestSuite.java
+kodilla-hibernate/src/test/java/com/kodilla/hibernate/manytomany/facade/SearchFacadeTest.java
+kodilla-patterns2/.gitignore
+kodilla-patterns2/build.gradle
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/KodillaApplication.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/pizza/AbstractPizzaOrderDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/pizza/BasicPizzaOrder.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/pizza/HawaiiPizzaOrderDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/pizza/PepperoniPizzaOrderDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/pizza/PizzaOrder.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/pizza/QuatrroFormaggiPizzaOrderDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/AbstractTaxiOrderDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/BasicTaxiOrder.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/ChildSeatDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/ExpressDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/MyTaxiNetworkOrderDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/TaxiNetworkOrderDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/TaxiOrder.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/UberNetworkOrderDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/decorator/taxiportal/VipCarDecorator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/Authenticator.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/Item.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/Order.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/ProductService.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/ShopService.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/api/ItemDto.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/api/OrderDto.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/api/OrderFacade.java
+kodilla-patterns2/src/main/java/com/kodilla/patterns2/facade/api/OrderProcessingException.java
+kodilla-patterns2/src/test/java/com/kodilla/patterns2/decorator/pizza/PizzaOrderTestSuite.java
+kodilla-patterns2/src/test/java/com/kodilla/patterns2/decorator/taxiportal/TaxiOrderTestSuite.java
+kodilla-patterns2/src/test/java/com/kodilla/patterns2/facade/ShopServiceTestSuite.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuBoard.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuElement.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuGame.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuRow.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuSolver.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/UserChoice.java
+kodilla-sudoku/src/test/java/com/kodilla/sudoku/KodillaSudokuApplicationTests.java
+settings.gradle
+
+[33mcommit 1fc7eff827cc87049666d6ec743c5fffd08ec3ef[m
+Author: ZuzannJanik <zjanik89@gmail.com>
+Date:   Tue May 2 12:01:23 2023 +0200
+
+    16.7 Sudoku
+
+kodilla-sudoku/java_pid80056.hprof
+
+[33mcommit 5ce54597e2f97ca0f192a33d7e89c02ef7ee25d0[m
+Author: ZuzannJanik <zjanik89@gmail.com>
+Date:   Tue May 2 11:44:10 2023 +0200
+
+    SudokuBoard
+
+kodilla-sudoku/java_pid80056.hprof
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuBoard.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuElement.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuGame.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuRow.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuSolver.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/UserChoice.java
+
+[33mcommit 72e29a2b74114e47a7b253115a654e2d5ebe4403[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ZuzannJanik <zjanik89@gmail.com>
+Date:   Fri Apr 28 11:21:05 2023 +0200
+
+    16.7 Sudoku
+
+kodilla-jdbc/src/main/java/com/kodilla/jdbc/sudoku/SudokuSolver.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/BoardVersion/Application.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/BoardVersion/Board.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/BoardVersion/Menu.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/BoardVersion/Solver.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuBoard.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuElement.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuGame.java
+kodilla-sudoku/src/main/java/com/kodilla/sudoku/ObjectVersion/SudokuRow.java
+
+[33mcommit 3f4b00716e79aa5beb8c4426b80e2c14f0e14bac[m
+Author: ZuzannJanik <zjanik89@gmail.com>
+Date:   Tue Apr 25 11:41:20 2023 +0200
+
+    17.3 and 17.4
+
+gradle/wrapper/gradle-wrapper.properties
+kodilla-hibernate/build.gradle
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/invoice/Invoice.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/invoice/Item.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/invoice/Product.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/invoice/dao/InvoiceDao.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/invoice/dao/ItemDao.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/invoice/dao/ProductDao.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/Company.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/Employee.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/dao/CompanyDao.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/manytomany/dao/EmployeeDao.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/task/Task.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/task/dao/TaskDao.java
+kodilla-hibernate/src/main/java/com/kodilla/hibernate/tasklist/TaskList.java
+kodilla-hibernate/src/test/java/com/kodilla/hibernate/invoice/dao/InvoiceDaoTestSuite.java
+kodilla-

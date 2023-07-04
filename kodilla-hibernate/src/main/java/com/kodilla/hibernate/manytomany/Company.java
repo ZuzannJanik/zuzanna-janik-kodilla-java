@@ -2,12 +2,15 @@ package com.kodilla.hibernate.manytomany;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+//@NamedNativeQuery(
+ //       name = "Company.retrieveCompanyNameWithString",
+  //      query = "SELECT * FROM COMPANIES WHERE SUBSTRING(COMPANY_NAME, 1, 3) = :COMPANY_NAME",
+  //      resultClass = Company.class
+//)
 @NamedNativeQuery(
-        name = "Company.retrieveCompanyNameWithString",
-        query = "SELECT * FROM COMPANIES WHERE SUBSTRING(COMPANY_NAME, 1, 3) = :COMPANY_NAME",
-        resultClass = Company.class
+        name = "Company.retrieveCompanyName",
+        query = "SELECT * FROM COMPANIES WHERE COMPANY_NAME LIKE CONCAT('%', :NAME , '%')"
 )
 @Entity
 @Table(name = "COMPANIES")
@@ -45,12 +48,14 @@ public class Company {
     private void setName(String name) {
         this.name = name;
     }
-@ManyToMany(cascade = CascadeType.ALL, mappedBy = "companies")
+    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "companies")
     public List<Employee> getEmployees() {
+
         return employees;
     }
 
     public void setEmployees(List<Employee> employees) {
+
         this.employees = employees;
     }
 }

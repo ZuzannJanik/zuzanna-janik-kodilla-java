@@ -37,6 +37,7 @@ public class SudokuSolver {
         }
     }
 
+
     private static boolean isNumberInRow(int[][] board, int number, int row) {
         for (int i = 0; i < 9; i++) {
             if (board[row][i] == number) {
@@ -82,6 +83,7 @@ public class SudokuSolver {
                     for (int numberToTry = 1; numberToTry <= 9; numberToTry++) {
                         if (isValidPlacement(board, numberToTry, row, column)) {
                             board[row][column] = numberToTry;
+
                             if (solveBoard(board)) {
                                 return true;
                             }
@@ -96,5 +98,6 @@ public class SudokuSolver {
         }
         return true;
     }
+
 }
 

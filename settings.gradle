@@ -11,4 +11,8 @@ include 'kodilla-patterns'
 include 'kodilla-jdbc'
 include 'kodilla-hibernate'
 include 'kodilla-sudoku'
+include 'kodilla-patterns2'
+include 'kodilla-sudoku:src:main:kodilla-sudokugame'
+findProject(':kodilla-sudoku:src:main:kodilla-sudokugame')?.name = 'kodilla-sudokugame'
+include 'kodilla-sudoku2'
 
